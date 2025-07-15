@@ -1,2 +1,2 @@
-# Doorsensor_LoRa
-Doorsensor with SX1278 LoRa module
+# Doorsensor_Lora
+Doorsensor with SX1278 Lora module

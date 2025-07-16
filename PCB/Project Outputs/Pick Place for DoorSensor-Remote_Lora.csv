@@ -1,0 +1,44 @@
+========================================================================================================================,,,,,,,
+File Design Information:,,,,,,,
+,,,,,,,
+Date: ,,,,,,,
+Time: ,,,,,,,
+Revision:   Not in VersionControl,,,,,,,
+Variant:    No variations,,,,,,,
+Units used: mil,,,,,,,
+,,,,,,,
+Designator,Center-X(mil),Center-Y(mil),Layer,Rotation,Comment,Footprint,Description
+M4,6317.500mil,1857.500mil,TopLayer,0,PCB Mounting Hole,PCB_Mounting_Hole,Mounting Hole
+M3,5012.500mil,1857.500mil,TopLayer,0,PCB Mounting Hole,PCB_Mounting_Hole,Mounting Hole
+M2,6317.500mil,4582.500mil,TopLayer,0,PCB Mounting Hole,PCB_Mounting_Hole,Mounting Hole
+M1,5012.500mil,4582.500mil,TopLayer,0,PCB Mounting Hole,PCB_Mounting_Hole,Mounting Hole
+C1,5680.498mil,3037.646mil,TopLayer,0,22uF/16V,C(Electrolytic)_SMD-D4.0mm_L5.4mm,
+U3,5740.000mil,4125.000mil,TopLayer,0,SX1278,SX1278_RA-02-LORA_MODULE_17X16MM,17x16mm
+U2,5651.447mil,3438.960mil,BottomLayer,270,STM8L101,TSSOP-20_4.4x6.5mm_P0.65mm,4.4x6.5mm_P0.65mm
+U1,5461.577mil,2982.281mil,BottomLayer,90,HT7333A,SOT89-3,
+SW4,6112.204mil,2674.163mil,TopLayer,180,CK_RS282G05A3,Tactile_Button_SMD-SPST_L6.1-W3.7-H2.5,
+SW3,5672.204mil,2674.163mil,TopLayer,180,CK_RS282G05A3,Tactile_Button_SMD-SPST_L6.1-W3.7-H2.5,
+SW2,6112.204mil,2429.163mil,TopLayer,180,CK_RS282G05A3,Tactile_Button_SMD-SPST_L6.1-W3.7-H2.5,
+SW1,5672.204mil,2429.163mil,TopLayer,180,CK_RS282G05A3,Tactile_Button_SMD-SPST_L6.1-W3.7-H2.5,
+R-Switch1,4982.913mil,3316.298mil,TopLayer,90,CT10-G1,Reed_Switch_Molded-SMD_SPST,
+R12,5133.992mil,2225.469mil,BottomLayer,270,1.5MO,R0603,
+R11,5251.008mil,2224.531mil,BottomLayer,90,10MO,R0603,
+R10,5138.992mil,2425.469mil,BottomLayer,270,4.7MO,R0603,
+R9,5246.008mil,2424.531mil,BottomLayer,90,1MO,R0603,
+R8,6135.469mil,3341.008mil,BottomLayer,180,1KO,R0603,
+R7,6230.469mil,2796.008mil,BottomLayer,180,10KO,R0603,
+R6,5790.469mil,2796.008mil,BottomLayer,180,10KO,R0603,
+R5,6230.469mil,2551.008mil,BottomLayer,180,10KO,R0603,
+R4,5790.469mil,2551.008mil,BottomLayer,180,10KO,R0603,
+R3,6135.000mil,3260.000mil,BottomLayer,180,10KO,R0805,
+R2,6125.469mil,3176.008mil,BottomLayer,180,1MO,R0603,
+R1,5118.992mil,3590.469mil,BottomLayer,270,1MO,R0603,
+Q2,4984.913mil,2236.023mil,BottomLayer,270,9014/SOT-23,SOT-23-3,
+Q1,5181.024mil,2580.087mil,BottomLayer,180,9014/SOT-23,SOT-23-3,
+LED1,6133.500mil,3424.000mil,BottomLayer,180,D-0603,LED0603-Castellated,
+JST-PH1,5204.529mil,2048.469mil,TopLayer,180,JST-PH2.0_2Pin-TH-Vertical,Connector-JST-PH2.0-2Pin_TH-Vertical,
+J2,5730.000mil,2115.000mil,TopLayer,180,PinHeader_4Pin,PinHeader_4Pin-2.54mm,"Straight Single Row, Square Pitch, 2.54mm"
+J1,6130.000mil,2115.000mil,TopLayer,180,PinHeader_3Pin,PinHeader_3Pin-2.54mm,"Straight Single Row, Square Pitch, 2.54mm"
+C4,6139.721mil,3512.046mil,BottomLayer,0,100nF,C0603,
+C3,5612.954mil,3009.721mil,BottomLayer,90,100nF,C0603,
+C2,5302.046mil,2845.279mil,BottomLayer,270,100nF,C0603,

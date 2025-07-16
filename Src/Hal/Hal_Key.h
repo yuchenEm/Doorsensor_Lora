@@ -1,0 +1,83 @@
+#ifndef __HAL_KEY_H_
+#define __HAL_KEY_H_
+
+#define KEY1_PORT	GPIOC
+#define KEY1_PIN	GPIO_Pin_3
+
+#define KEY2_PORT	GPIOC
+#define KEY2_PIN	GPIO_Pin_2
+
+#define KEY3_PORT	GPIOC
+#define KEY3_PIN	GPIO_Pin_4
+
+#define KEY4_PORT	GPIOC
+#define KEY4_PIN	GPIO_Pin_1
+
+#define KEY_SCANTIME                20      //20 ms
+#define KEY_PRESS_LONG_TIME         1000    //1 s  
+#define KEY_PRESS_CONTINUE_TIME     150     //150 ms
+
+typedef enum
+{
+  KEY_S1,		 
+  KEY_S2,		 
+  KEY_S3,
+  KEY_S4,
+  KEY_NET,
+  
+  KEYNUM
+}KEY_TYPEDEF;
+
+typedef enum
+{
+  KEY_STEP_WAIT,			    
+  KEY_STEP_CLICK,				
+  KEY_STEP_LONG_PRESS,			
+  KEY_STEP_CONTINUOUS_PRESS,  
+}KEY_STEP_TYPEDEF;
+
+typedef enum
+{
+	KEY_IDLE_VAL,                   //0
+    
+	KEY1_CLICK,
+	KEY1_CLICK_RELEASE,
+	KEY1_LONG_PRESS,
+	KEY1_LONG_PRESS_CONTINUOUS,
+	KEY1_LONG_PRESS_RELEASE,		//5
+	
+	KEY2_CLICK,						//6
+	KEY2_CLICK_RELEASE,
+	KEY2_LONG_PRESS,
+	KEY2_LONG_PRESS_CONTINUOUS,
+	KEY2_LONG_PRESS_RELEASE,
+	
+	KEY3_CLICK,					    //11
+	KEY3_CLICK_RELEASE,
+	KEY3_LONG_PRESS,
+	KEY3_LONG_PRESS_CONTINUOUS,
+	KEY3_LONG_PRESS_RELEASE,
+	
+	KEY4_CLICK,						//16
+	KEY4_CLICK_RELEASE,
+	KEY4_LONG_PRESS,
+	KEY4_LONG_PRESS_CONTINUOUS,
+	KEY4_LONG_PRESS_RELEASE,
+	
+	KEYNET_CLICK,					//21
+	KEYNET_CLICK_RELEASE,
+	KEYNET_LONG_PRESS,
+	KEYNET_LONG_PRESS_CONTINUOUS,
+	KEYNET_LONG_PRESS_RELEASE,
+    
+}KEY_VALUE_TYPEDEF;
+
+typedef void (*KeyEvent_CallBack_t)(KEY_VALUE_TYPEDEF KeyValue);
+
+void Hal_Key_Init(void);
+void Hal_Key_Config(void);
+void Hal_Key_KeyScanCBSRegister(KeyEvent_CallBack_t pCBS);
+void Hal_Key_Pro(void);
+unsigned char Hal_Key_GetAllKeyState(void);
+
+#endif
